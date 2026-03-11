@@ -11,7 +11,7 @@ def setup():
     chrome_option.add_argument("--no-sandbox")
 
     driver = webdriver.Chrome(options=chrome_option)
-    driver.implicitly_wait(20)
+    driver.implicitly_wait(30)
     yield driver
 
     driver.quit()

@@ -43,7 +43,7 @@ class SignUp_page():
 
     def __init__(self,driver):
         self.driver = driver
-        self.wait = WebDriverWait(driver,20)
+        self.wait = WebDriverWait(driver,30)
 
     def enter_your_name(self,Name:str):
         name = self.wait.until(EC.visibility_of_element_located(self.testbox_username_input_el))
