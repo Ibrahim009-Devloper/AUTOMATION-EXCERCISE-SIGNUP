@@ -38,7 +38,7 @@ class Test_increact_login():
         self.login.incrate_login_email()
         self.login.increact_password(read_config.get_password())
         self.login.click_login_btn()
-        error_masg = WebDriverWait(self.driver,20).until(EC.visibility_of_element_located((By.XPATH,"//p[contains(text(),'Your email or password is incorrect!')]")))
+        error_masg = WebDriverWait(self.driver,20).until(EC.visibility_of_element_located((By.XPATH,"//p[contains(normalize-space(),'incorrect!')]")))
         assert error_masg.is_displayed(),"Error massage is not displayed"
         self.logger.info("*******Error massage is verified********")
         
