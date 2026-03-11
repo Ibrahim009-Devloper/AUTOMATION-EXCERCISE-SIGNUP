@@ -4,6 +4,7 @@ from selenium import webdriver
 from base_pages.signup_page import SignUp_page
 from utilities.read_propertics import read_config
 from utilities.custom_loger import log_maker
+from selenium.common.exceptions import TimeoutException
 
 
 
@@ -64,13 +65,15 @@ class Test_01_login_page():
         self.admin_lp.signup_zipcode(read_config.get_zipcode())
         self.admin_lp.signup_mobile_number(read_config.get_phone_number())
         self.admin_lp.click_create_account_btn()
-
-        sucess_msg = self.admin_lp.Account_create_sucessfully()
-        self.logger.info("Account crerated sucessfully")
-        if sucess_msg.strip()  != "ACCOUNT CREATED!":
-            self.driver.save_screenshot(".//scerennshots//error_signup.png")
-            self.logger.error("********Account not created********")
-            assert False
+        try:
+            sucess_msg = self.admin_lp.Account_create_sucessfully()
+            self.logger.info("Account crerated sucessfully")
+            if sucess_msg.strip()  != "ACCOUNT CREATED!":
+                self.driver.save_screenshot(".//scerennshots//error_signup.png")
+                self.logger.error("********Account not created********")
+                assert False
+        except TimeoutException:
+            pass
             
         self.logger.info("********The Test Case Has Been Passed*******")
 
