@@ -1,0 +1,6 @@
+selenium
+pytest
+pytest-xdist
+pytest-html
+open-pyxl
+allure-pytest
