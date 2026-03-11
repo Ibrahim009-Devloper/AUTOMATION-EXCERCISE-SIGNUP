@@ -12,6 +12,7 @@ import random
 
 
 class SignUp_page():
+    click_login_el_btn = (By.XPATH,"//a[contains(text(),' Signup / Login')]")
     testbox_username_input_el = (By.NAME,"name")
     testbox_email_input_el = (By.XPATH,"//input[contains(@data-qa,'signup-email')]")
     signup_btn_el = (By.XPATH,"//button[contains(@data-qa,'signup-button')]")
@@ -44,6 +45,9 @@ class SignUp_page():
     def __init__(self,driver):
         self.driver = driver
         self.wait = WebDriverWait(driver,30)
+
+    def click_login_signup_btn(self):
+        self.wait.until(EC.element_to_be_clickable(self.click_login_el_btn)).click()
 
     def enter_your_name(self,Name:str):
         name = self.wait.until(EC.visibility_of_element_located(self.testbox_username_input_el))

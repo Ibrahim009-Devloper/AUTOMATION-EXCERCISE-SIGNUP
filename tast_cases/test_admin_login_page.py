@@ -19,6 +19,9 @@ class Test_01_login_page():
         self.logger.info("Title Verificition started")
         self.driver = setup
         self.driver.get(read_config.get_admin_url())
+        self.signup = SignUp_page(self.driver)
+        self.signup.click_login_signup_btn()
+        
         act_tittle = self.driver.title
         exp_tittle = "Automation Exercise - Signup / Login"
 
@@ -34,6 +37,7 @@ class Test_01_login_page():
         self.driver.get(read_config.get_admin_url())
 
         self.admin_lp =SignUp_page(self.driver)
+        self.admin_lp.click_login_signup_btn()
         self.admin_lp.enter_your_name(read_config.get_User_name())
         self.admin_lp.enter_your_email()
         self.admin_lp.click_signup_btn()
