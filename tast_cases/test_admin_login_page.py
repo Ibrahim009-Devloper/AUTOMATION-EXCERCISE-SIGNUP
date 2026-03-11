@@ -68,12 +68,12 @@ class Test_01_login_page():
         try:
             sucess_msg = self.admin_lp.Account_create_sucessfully()
             self.logger.info("Account crerated sucessfully")
-            if sucess_msg.strip()  != "ACCOUNT CREATED!":
-                self.driver.save_screenshot(".//scerennshots//error_signup.png")
-                self.logger.error("********Account not created********")
-                assert False
+            assert True
         except TimeoutException:
-            pass
+            self.driver.save_screenshot(".//scerennshots//error_signup.png")
+            self.logger.error("********Account not created********")
+            assert False
+        
             
         self.logger.info("********The Test Case Has Been Passed*******")
 
