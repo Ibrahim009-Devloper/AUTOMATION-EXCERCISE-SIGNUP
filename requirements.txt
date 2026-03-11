@@ -4,3 +4,4 @@ pytest-xdist
 pytest-html
 openpyxl
 allure-pytest
+webdriver-manager
