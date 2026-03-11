@@ -7,6 +7,7 @@ from utilities.custom_loger import log_maker
 
 
 
+
 class Test_01_login_page():
     logger = log_maker.log_gen()
     
@@ -14,9 +15,9 @@ class Test_01_login_page():
     
 
 
-    def test_tittle_varification(self):
+    def test_tittle_varification(self,setup):
         self.logger.info("Title Verificition started")
-        self.driver = webdriver.Chrome()
+        self.driver = setup
         self.driver.get(read_config.get_admin_url())
         act_tittle = self.driver.title
         exp_tittle = "Automation Exercise - Signup / Login"
@@ -27,9 +28,9 @@ class Test_01_login_page():
         else:
             self.driver.quit()
             assert False
-    def test_valid_signup(self):
+    def test_valid_signup(self,setup):
         self.logger.info("Signup test case started")
-        self.driver = webdriver.Chrome()
+        self.driver = setup
         self.driver.get(read_config.get_admin_url())
 
         self.admin_lp =SignUp_page(self.driver)
