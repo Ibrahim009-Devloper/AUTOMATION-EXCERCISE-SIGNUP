@@ -41,9 +41,9 @@ class Test_01_login_page():
         
         email_exist_msg = self.admin_lp.email_alrady_exist()
         if email_exist_msg:
-            pytest.fail(f"Massage: {email_exist_msg}")
             self.driver.save_screenshot(".//scerennshots//Email_alrady_exist.png")
             self.logger.info("********Signup Faild. Email alrady exist*********")
+            pytest.fail(f"Massage: {email_exist_msg}")
         
 
         self.logger.info("********Filling the information**********")
@@ -69,8 +69,9 @@ class Test_01_login_page():
         self.logger.info("Account crerated sucessfully")
         if sucess_msg.strip()  != "ACCOUNT CREATED!":
             self.driver.save_screenshot(".//scerennshots//error_signup.png")
-            assert False
             self.logger.error("********Account not created********")
+            assert False
+            
         self.logger.info("********The Test Case Has Been Passed*******")
 
         

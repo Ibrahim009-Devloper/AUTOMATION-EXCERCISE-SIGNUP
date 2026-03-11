@@ -36,3 +36,9 @@
 2026-03-11 16:18:54 | WARNING | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60767): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/234b3370828ee691d9c6216cba83f132
 2026-03-11 16:18:58 | WARNING | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60767): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/234b3370828ee691d9c6216cba83f132
 2026-03-11 16:19:02 | WARNING | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=60767): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it")': /session/234b3370828ee691d9c6216cba83f132
+2026-03-11 16:46:04 | INFO | Selenium logs Test | Title Verificition started
+2026-03-11 16:46:11 | INFO | Selenium logs Test | Signup test case started
+2026-03-11 16:46:15 | INFO | Selenium logs Test | ******entered name and email sucessfully*****
+2026-03-11 16:46:45 | INFO | Selenium logs Test | ********Filling the information**********
+2026-03-11 16:46:50 | INFO | Selenium logs Test | Account crerated sucessfully
+2026-03-11 16:46:50 | INFO | Selenium logs Test | ********The Test Case Has Been Passed*******
