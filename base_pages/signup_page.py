@@ -51,7 +51,8 @@ class SignUp_page():
         name.send_keys(Name)
 
     def random_email(self):
-        username = "".join(random.choice(string.ascii_lowercase + string.digits))
+        leanth = 8 
+        username = "".join(random.choices(string.ascii_lowercase + string.digits, k = leanth))
         domain = random.choice(["gmail.com","yahoo.com","outlook.com","example.com"])
         return f"{username}@{domain}"
 

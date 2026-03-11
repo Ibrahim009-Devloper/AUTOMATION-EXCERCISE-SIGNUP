@@ -1,0 +1,9 @@
+2026-03-11 14:11:44 | INFO | Selenium logs Test | Title Verificition started
+2026-03-11 14:11:52 | INFO | Selenium logs Test | Signup test case started
+2026-03-11 14:12:00 | INFO | Selenium logs Test | Filling the information....
+2026-03-11 14:12:05 | INFO | Selenium logs Test | Account crerated sucessfully
+2026-03-11 14:18:37 | INFO | Selenium logs Test | Title Verificition started
+2026-03-11 14:18:45 | INFO | Selenium logs Test | ******entered name and email sucessfully*****
+2026-03-11 14:18:47 | INFO | Selenium logs Test | ********Filling the information**********
+2026-03-11 14:18:55 | INFO | Selenium logs Test | Account crerated sucessfully
+2026-03-11 14:18:55 | INFO | Selenium logs Test | ********The Test Case Has Been Passed*******

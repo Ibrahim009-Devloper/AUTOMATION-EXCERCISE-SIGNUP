@@ -3,14 +3,19 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 from base_pages.signup_page import SignUp_page
 from utilities.read_propertics import read_config
+from utilities.custom_loger import log_maker
+
 
 
 class Test_01_login_page():
+    logger = log_maker.log_gen()
+    
     
     
 
 
     def test_tittle_varification(self):
+        self.logger.info("Title Verificition started")
         self.driver = webdriver.Chrome()
         self.driver.get(read_config.get_admin_url())
         act_tittle = self.driver.title
@@ -23,6 +28,7 @@ class Test_01_login_page():
             self.driver.quit()
             assert False
     def test_valid_signup(self):
+        self.logger.info("Signup test case started")
         self.driver = webdriver.Chrome()
         self.driver.get(read_config.get_admin_url())
 
@@ -30,14 +36,17 @@ class Test_01_login_page():
         self.admin_lp.enter_your_name(read_config.get_User_name())
         self.admin_lp.enter_your_email()
         self.admin_lp.click_signup_btn()
+        self.logger.info("******entered name and email sucessfully*****")
         
         email_exist_msg = self.admin_lp.email_alrady_exist()
         if email_exist_msg:
             pytest.fail(f"Massage: {email_exist_msg}")
             self.driver.close()
+            self.driver.save_screenshot(".//scerennshots//Email_alrady_exist.png")
+            self.logger.info("********Signup Faild. Email alrady exist*********")
         
 
-
+        self.logger.info("********Filling the information**********")
         self.admin_lp.select_gender()
         self.admin_lp.signup_get_password(read_config.get_password())
         self.admin_lp.signup_select_days(read_config.get_Days())
@@ -57,10 +66,13 @@ class Test_01_login_page():
         self.admin_lp.click_create_account_btn()
 
         sucess_msg = self.admin_lp.Account_create_sucessfully()
+        self.logger.info("Account crerated sucessfully")
         if sucess_msg.strip()  != "ACCOUNT CREATED!":
             self.driver.save_screenshot(".//scerennshots//error_signup.png")
             self.driver.quit()
             assert False
+            self.logger.error("********Account not created********")
+        self.logger.info("********The Test Case Has Been Passed*******")
 
         
         self.driver.quit()
