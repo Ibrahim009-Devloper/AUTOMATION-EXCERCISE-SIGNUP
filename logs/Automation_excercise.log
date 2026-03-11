@@ -323,3 +323,39 @@
 2026-03-12 00:54:29 | INFO | Selenium logs Test | ********Filling the information**********
 2026-03-12 00:54:35 | INFO | Selenium logs Test | Account crerated sucessfully
 2026-03-12 00:54:35 | INFO | Selenium logs Test | ********The Test Case Has Been Passed*******
+2026-03-12 01:21:56 | INFO | WDM | ====== WebDriver manager ======
+2026-03-12 01:21:58 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-03-12 01:21:59 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-03-12 01:21:59 | INFO | WDM | Driver [C:\Users\Ibrahim Sheikh\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-12 01:22:01 | INFO | Selenium logs Test | Title Verificition started
+2026-03-12 01:22:10 | INFO | WDM | ====== WebDriver manager ======
+2026-03-12 01:22:12 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-03-12 01:22:12 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-03-12 01:22:13 | INFO | WDM | Driver [C:\Users\Ibrahim Sheikh\.wdm\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-12 01:22:14 | INFO | Selenium logs Test | Signup test case started
+2026-03-12 01:22:21 | INFO | Selenium logs Test | ******entered name and email sucessfully*****
+2026-03-12 01:23:25 | INFO | WDM | xdist worker is: gw3
+2026-03-12 01:23:25 | INFO | WDM | ====== WebDriver manager ======
+2026-03-12 01:23:28 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-03-12 01:23:28 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-03-12 01:23:28 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-03-12 01:23:28 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-03-12 01:23:28 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-03-12 01:23:28 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-03-12 01:23:28 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-03-12 01:23:28 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2026-03-12 01:23:29 | INFO | WDM | Driver [C:\Users\Ibrahim Sheikh\.wdm\gw0\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-12 01:23:29 | INFO | WDM | Driver [C:\Users\Ibrahim Sheikh\.wdm\gw3\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-12 01:23:29 | INFO | WDM | Driver [C:\Users\Ibrahim Sheikh\.wdm\gw1\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-12 01:23:29 | INFO | WDM | Driver [C:\Users\Ibrahim Sheikh\.wdm\gw2\drivers\chromedriver\win64\145.0.7632.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-03-12 01:23:33 | INFO | Selenium logs Test | ******home page title verification test started*******
+2026-03-12 01:23:33 | INFO | Selenium logs Test | Signup test case started
+2026-03-12 01:23:33 | INFO | Selenium logs Test | ******increact login test started*******
+2026-03-12 01:23:33 | INFO | Selenium logs Test | Title Verificition started
+2026-03-12 01:23:39 | INFO | Selenium logs Test | ********home page title verification finished********
+2026-03-12 01:23:43 | INFO | Selenium logs Test | *******Login to your account is verified********
+2026-03-12 01:23:45 | INFO | Selenium logs Test | ******entered name and email sucessfully*****
+2026-03-12 01:23:45 | INFO | Selenium logs Test | *******Error massage is verified********
+2026-03-12 01:24:15 | INFO | Selenium logs Test | ********Filling the information**********
+2026-03-12 01:24:20 | INFO | Selenium logs Test | Account crerated sucessfully
+2026-03-12 01:24:20 | INFO | Selenium logs Test | ********The Test Case Has Been Passed*******

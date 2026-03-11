@@ -150,8 +150,9 @@ class SignUp_page():
         self.wait.until(EC.element_to_be_clickable(self.signup_click_create_account_btn)).click()
 
     def Account_create_sucessfully(self):
-        text = self.wait.until(EC.visibility_of_element_located(self.signup_sucessfully_el)).text
-        return text
+        el_text = self.wait.until(EC.visibility_of_element_located(self.signup_sucessfully_el))
+        self.driver.execute_script("arguments[0].scrollIntoView({block:'center'});",el_text)
+        return el_text.text
 
 
     
