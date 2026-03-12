@@ -359,3 +359,24 @@
 2026-03-12 01:24:15 | INFO | Selenium logs Test | ********Filling the information**********
 2026-03-12 01:24:20 | INFO | Selenium logs Test | Account crerated sucessfully
 2026-03-12 01:24:20 | INFO | Selenium logs Test | ********The Test Case Has Been Passed*******
+2026-03-12 22:54:35 | INFO | Selenium logs Test | Title Verificition started
+2026-03-12 22:55:03 | INFO | Selenium logs Test | Title Verificition started
+2026-03-12 22:55:12 | INFO | Selenium logs Test | Signup test case started
+2026-03-12 22:55:18 | INFO | Selenium logs Test | ******entered name and email sucessfully*****
+2026-03-12 22:55:20 | INFO | Selenium logs Test | ********Filling the information**********
+2026-03-12 22:55:50 | INFO | Selenium logs Test | ******home page title verification test started*******
+2026-03-12 22:55:54 | INFO | Selenium logs Test | ********home page title verification finished********
+2026-03-12 22:55:58 | INFO | Selenium logs Test | ******increact login test started*******
+2026-03-12 22:56:02 | INFO | Selenium logs Test | *******Login to your account is verified********
+2026-03-12 22:56:03 | INFO | Selenium logs Test | *******Error massage is verified********
+2026-03-12 22:58:32 | INFO | Selenium logs Test | Title Verificition started
+2026-03-12 22:58:40 | INFO | Selenium logs Test | Signup test case started
+2026-03-12 22:58:46 | INFO | Selenium logs Test | ******entered name and email sucessfully*****
+2026-03-12 22:58:48 | INFO | Selenium logs Test | ********Filling the information**********
+2026-03-12 22:58:53 | INFO | Selenium logs Test | Account crerated sucessfully
+2026-03-12 22:58:53 | INFO | Selenium logs Test | ********The Test Case Has Been Passed*******
+2026-03-12 22:58:57 | INFO | Selenium logs Test | ******home page title verification test started*******
+2026-03-12 22:59:01 | INFO | Selenium logs Test | ********home page title verification finished********
+2026-03-12 22:59:05 | INFO | Selenium logs Test | ******increact login test started*******
+2026-03-12 22:59:09 | INFO | Selenium logs Test | *******Login to your account is verified********
+2026-03-12 22:59:10 | INFO | Selenium logs Test | *******Error massage is verified********

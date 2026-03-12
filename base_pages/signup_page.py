@@ -147,7 +147,9 @@ class SignUp_page():
         self.wait.until(EC.visibility_of_element_located(self.signup_phone_number_el)).send_keys(Phone_number)
 
     def click_create_account_btn(self):
-        self.wait.until(EC.element_to_be_clickable(self.signup_click_create_account_btn)).click()
+        created_btn = self.wait.until(EC.element_to_be_clickable(self.signup_click_create_account_btn))
+        self.driver.execute_script("arguments[0].click()",created_btn)
+
 
     def Account_create_sucessfully(self):
         el_text = self.wait.until(EC.visibility_of_element_located(self.signup_sucessfully_el))
