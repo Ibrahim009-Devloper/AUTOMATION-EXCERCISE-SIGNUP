@@ -7,7 +7,7 @@ import random
 import time
 
 
-class Increate_login():
+class Incorrect_login():
     def __init__(self,driver):
         self.driver = driver
         self.wait = WebDriverWait(driver,20)

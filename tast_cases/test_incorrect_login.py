@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 
 import pytest
-from base_pages.incarect_login import Increate_login
+from base_pages.incorrect_login import Incorrect_login
 from utilities.custom_loger import log_maker
 from utilities.read_propertics import read_config
 
@@ -30,7 +30,7 @@ class Test_increact_login():
         self.driver = setup
         self.driver.get(read_config.get_admin_url())
         
-        self.login = Increate_login(self.driver)
+        self.login = Incorrect_login(self.driver)
         self.login.click_login_signup_btn()
         el = WebDriverWait(self.driver,20).until(EC.visibility_of_element_located((By.XPATH,"//div[contains(@class,'login-form')]//h2")))
         self.driver.execute_script("arguments[0].scrollIntoView({block:'center'});",el)
